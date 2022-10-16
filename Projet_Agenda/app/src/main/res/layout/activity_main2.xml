@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <TextView
+        android:id="@+id/text_titre"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Titre"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/text_contenu"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:text="Contenu"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_retour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Retour" />
+
+        <Button
+            android:id="@+id/btn_modifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modifier"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btn_supprimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supprimer"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
