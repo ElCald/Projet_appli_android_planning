@@ -2,22 +2,25 @@ package com.example.projet_agenda;
 
 import java.util.Date;
 
+/* Evennement de l'agenda, c'est un objet, on y trouve : titre, contenu, date, tag, lien vers image*/
+
 public class Evenement {
     //attributs
     private String titre;
     private String contenu;
     private String tag;
-    private Date date;
+    private String date;
     private String image; //lien vers le dossier image
 
 
     //const
-    public Evenement(String titre, String contenu, String tag, Date date, String image){
+    public Evenement(String titre, String contenu, String tag, String date, String image){
         this.titre = titre;
         this.contenu = contenu;
         this.tag = tag;
         this.date = date;
         this.image = image;
+
     }
 
 
@@ -28,7 +31,7 @@ public class Evenement {
 
     public String getTag(){return tag;}
 
-    public Date getDate(){return date;}
+    public String getDate(){return date;}
 
     public String getImage(){return image;}
 
@@ -38,7 +41,7 @@ public class Evenement {
 
     public void setTag(String t){this.tag = t;}
 
-    public void setDate(Date d){this.date = d;}
+    public void setDate(String d){this.date = d;}
 
 
 }//fin class

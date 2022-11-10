@@ -13,4 +13,29 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/secondaryDarkColor</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/secondaryColor</item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f</item>
+    </style>
+
+
+    <style name="Button.Danger" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/danger</item>
+    </style>
+
+    <style name="Button.Valider" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/good</item>
+    </style>
+
+    <style name="Button.Warning" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/warning</item>
+    </style>
+
 </resources>

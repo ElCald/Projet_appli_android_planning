@@ -3,30 +3,38 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/TBar"
+    android:id="@+id/TBarH"
     android:background="@color/primaryDarkColor">
 
 
-    <ImageView
-        android:id="@+id/fleche_retour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/fleche_retour_blanc"/>
-
-
     <TextView
-        android:id="@+id/textView_TBar_titre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Barre "
+        android:text="Accueil"
         android:textColor="@color/primaryTextColor"
         android:layout_gravity="center"/>
 
-    <ImageView
-        android:id="@+id/image_edit"
+    <TextView
+        android:id="@+id/textView_TBar_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/edit_blanc"
+        android:text="10 dec 2022"
+        android:textColor="@color/primaryTextColor"
+        android:layout_gravity="left"/>
+
+    <ImageView
+        android:id="@+id/image_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/option_blanc"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"/>
+
+    <ImageView
+        android:id="@+id/image_ajouter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ajouter_blanc"
         android:layout_gravity="right"
         android:layout_marginRight="20dp"/>
 
